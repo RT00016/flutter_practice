@@ -18,7 +18,7 @@ class HomeView extends StatelessWidget {
               height: 45,
               child: RaisedButton(
                   onPressed: () {
-                    onButtonTap();
+                    onButtonTap(context);
                   },
                   child: Text('スタート')))
         ],
@@ -26,7 +26,8 @@ class HomeView extends StatelessWidget {
     ));
   }
 
-  void onButtonTap() {
+  void onButtonTap(context) {
     print('tap');
+    Navigator.pushNamed(context, '/shiritori');
   }
 }
