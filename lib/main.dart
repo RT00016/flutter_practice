@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practice/home.dart';
+import 'package:flutter_practice/shiritori_view.dart';
 
 Future<void> main() async {
   runApp(MyApp());
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => HomeView(),
+        '/shiritori': (context) => Shitritori()
       },
     );
   }
